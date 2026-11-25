@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3b1720">
+  <meta name="description" content="L'Eldorado, bar à Cherbourg-en-Cotentin. Découvrez notre carte et laissez-nous votre avis.">
+  <title>L'Eldorado | Bar à Cherbourg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--wine:#3b1720;--wine2:#54242e;--cream:#f7f1e7;--paper:#fffaf1;--gold:#b18b52;--ink:#2d2522}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
+    .topline{height:7px;background:var(--gold)}
+    header{background:var(--wine);color:var(--cream);padding:24px 22px 68px;position:relative;overflow:hidden}
+    header:after{content:"";position:absolute;width:310px;height:310px;border:1px solid rgba(207,174,120,.24);border-radius:50%;right:-115px;top:-165px}
+    nav{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{font-family:"Playfair Display",serif;font-size:24px;letter-spacing:.12em}
+    nav a{color:var(--cream);text-decoration:none;font-size:13px;margin-left:22px}
+    .hero{max-width:1080px;margin:70px auto 0;position:relative;z-index:1}
+    .eyebrow{color:#d7bd91;text-transform:uppercase;letter-spacing:.22em;font-size:11px}
+    h1,h2{font-family:"Playfair Display",serif;font-weight:600}
+    h1{font-size:clamp(48px,8vw,88px);line-height:.98;margin:18px 0 18px;max-width:720px}
+    .hero p{font-size:16px;line-height:1.8;color:#e6d9c9;max-width:520px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{display:inline-block;padding:14px 21px;text-decoration:none;font-size:13px;letter-spacing:.04em;border:1px solid var(--gold);color:var(--cream)}
+    .btn.primary{background:var(--gold);color:#261a16}
+    main{max-width:1080px;margin:auto;padding:0 22px}
+    .intro{display:grid;grid-template-columns:1fr 1fr;gap:55px;padding:78px 0 62px;align-items:center}
+    .intro h2,.menu h2,.visit h2{font-size:clamp(34px,5vw,48px);line-height:1.08;margin:12px 0}
+    .intro p,.visit p{line-height:1.85;color:#655a53}
+    .ornament{border:1px solid rgba(177,139,82,.6);padding:30px;text-align:center;min-height:220px;display:flex;flex-direction:column;justify-content:center;background:rgba(255,250,241,.55)}
+    .ornament .star{color:var(--gold);font-size:30px}
+    .ornament strong{font-family:"Playfair Display",serif;font-size:27px;font-weight:500;color:var(--wine);margin:12px 0}
+    .ornament small{letter-spacing:.16em;text-transform:uppercase;color:#89765e;font-size:10px}
+    .menu{background:var(--paper);padding:56px clamp(22px,5vw,58px);margin:0 -22px}
+    .menu-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:32px}
+    .menu-head p{max-width:350px;color:#71645b;line-height:1.7;font-size:14px}
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e4d9c8}
+    .category{padding:22px 14px 22px 0;border-bottom:1px solid #e4d9c8}
+    .category span{display:block;color:var(--gold);font-size:11px;letter-spacing:.14em;margin-bottom:9px}
+    .category h3{font-family:"Playfair Display",serif;font-size:19px;font-weight:500;margin:0;color:var(--wine)}
+    .menu-link{margin-top:28px}
+    .menu-link a{color:var(--wine);font-weight:600;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:5px}
+    .visit{padding:75px 0;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .address{border-left:2px solid var(--gold);padding:8px 0 8px 22px;margin:24px 0;color:var(--wine);line-height:1.8}
+    .review{background:var(--wine);color:var(--cream);padding:34px}
+    .review h3{font-family:"Playfair Display",serif;font-size:27px;font-weight:500;margin:0 0 12px}
+    .review p{color:#e3d5c6;font-size:14px;line-height:1.7}
+    .review .btn{margin-top:10px}
+    footer{background:#281218;color:#d9cbb9;text-align:center;padding:25px 20px;font-size:12px;line-height:1.8}
+    footer strong{font-family:"Playfair Display",serif;letter-spacing:.12em;font-size:15px;color:var(--cream)}
+    @media(max-width:720px){
+      nav{align-items:flex-start}.navlinks{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{margin:0;font-size:12px}
+      .hero{margin-top:54px}.intro,.visit{grid-template-columns:1fr;gap:28px;padding:55px 0}
+      .categories{grid-template-columns:repeat(2,1fr)}.menu-head{display:block}.menu-head p{margin-top:12px}
+      .menu{padding-top:44px;padding-bottom:44px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <nav>
+      <div class="brand">L'ELDORADO</div>
+      <div class="navlinks"><a href="#carte">La carte</a><a href="#adresse">Nous trouver</a><a href="#avis">Votre avis</a></div>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">Bar · Cherbourg-en-Cotentin</div>
+      <h1>Le plaisir<br>de se retrouver.</h1>
+      <p>Bienvenue à L'Eldorado. Découvrez notre univers, consultez la carte et partagez votre expérience.</p>
+      <div class="actions">
+        <a class="btn primary" href="#carte">Découvrir la carte</a>
+        <a class="btn" href="#adresse">Nous trouver</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <div class="eyebrow">Bienvenue chez nous</div>
+        <h2>Un lieu pour<br>chaque moment.</h2>
+        <p>Que vous veniez pour un café, un verre entre amis ou un cocktail, L'Eldorado vous accueille au cœur de Cherbourg.</p>
+      </div>
+      <div class="ornament">
+        <div class="star">✳</div>
+        <strong>L'Eldorado</strong>
+        <small>Cherbourg-en-Cotentin</small>
+      </div>
+    </section>
+
+    <section class="menu" id="carte">
+      <div class="menu-head">
+        <div><div class="eyebrow">À découvrir</div><h2>La carte</h2></div>
+        <p>Retrouvez nos différentes familles de boissons. La carte détaillée est accessible en un clic.</p>
+      </div>
+      <div class="categories">
+        <div class="category"><span>01</span><h3>Bières maison</h3></div>
+        <div class="category"><span>02</span><h3>Cocktails signature</h3></div>
+        <div class="category"><span>03</span><h3>Cocktails Red Bull</h3></div>
+        <div class="category"><span>04</span><h3>Spiritueux</h3></div>
+        <div class="category"><span>05</span><h3>Vins</h3></div>
+        <div class="category"><span>06</span><h3>Champagnes</h3></div>
+        <div class="category"><span>07</span><h3>Cafés</h3></div>
+        <div class="category"><span>08</span><h3>Sans alcool</h3></div>
+      </div>
+      <div class="menu-link"><a href="https://d2ol7oe51mr4n9.cloudfront.net/user_3LXS9MzOwXw6yBz6rPfOas1CfYJ/2d34ee7d-633f-44e0-b85e-1067962e25af.pdf" target="_blank" rel="noopener">Consulter la carte complète ↗</a></div>
+    </section>
+
+    <section class="visit" id="adresse">
+      <div>
+        <div class="eyebrow">À bientôt</div>
+        <h2>Retrouvez-nous<br>à Cherbourg.</h2>
+        <p>Passez nous voir et profitez d'un moment à L'Eldorado.</p>
+        <div class="address"><strong>L'Eldorado</strong><br>52 rue François-La-Vieille<br>50100 Cherbourg-en-Cotentin</div>
+        <a class="btn" style="border-color:var(--wine);color:var(--wine)" href="https://www.google.com/maps/search/?api=1&query=L%27Eldorado%2C%2052%20rue%20Fran%C3%A7ois-La-Vieille%2C%2050100%20Cherbourg-en-Cotentin" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+      </div>
+      <div class="review" id="avis">
+        <div class="eyebrow">Votre expérience compte</div>
+        <h3>Un bon moment chez nous ?</h3>
+        <p>Votre avis nous aide à faire vivre L'Eldorado. Merci de prendre un instant pour le partager sur Google.</p>
+        <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=L%27Eldorado%2C%2052%20rue%20Fran%C3%A7ois-La-Vieille%2C%2050100%20Cherbourg-en-Cotentin" target="_blank" rel="noopener">Laisser un avis</a>
+      </div>
+    </section>
+  </main>
+  <footer><strong>L'ELDORADO</strong><br>52 rue François-La-Vieille · 50100 Cherbourg-en-Cotentin<br>© L'Eldorado</footer>
+</body>
+</html>
